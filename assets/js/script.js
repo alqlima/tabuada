@@ -1,7 +1,7 @@
 function calculaTabuada() {
 	let tabuada = document.querySelector("#tabuada tbody");
 
-	let valorA = 99;
+	let valorA = parseInt(document.querySelector("#valorA").value);
 
 	tabuada.innerHTML = '';
 
@@ -19,3 +19,5 @@ function calculaTabuada() {
 };
 };
 calculaTabuada();
+
+document.querySelector("#valorA").addEventListener('change', calculaTabuada);
